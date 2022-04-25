@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesafioCicloVia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lista_sin_filtrar">Lista sin Filtrar</string>
+    <string name="filtrar_las_condes">Filtrar Las Condes</string>
+</resources>

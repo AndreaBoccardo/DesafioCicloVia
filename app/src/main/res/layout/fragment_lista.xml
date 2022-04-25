@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ListaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_sin_filtrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <Button
+            android:id="@+id/btnFiltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filtrar_las_condes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toEndOf="@+id/btnLista"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLista"
+            android:layout_width="411dp"
+            android:layout_height="459dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnLista"
+            app:layout_constraintVertical_bias="0.455" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
